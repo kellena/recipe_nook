@@ -11,7 +11,7 @@ router.get('/:searchterm', async (req, res) => {
 
     .then(function (response) {
       // handle success
-      console.log(response.data);
+      console.log(response.data)
         .then(function (response) {
             // handle success
             let hits = response.data.hits;
@@ -40,6 +40,7 @@ router.get('/:searchterm', async (req, res) => {
             "oh fork, something went wrong"
             console.log(error);
         })
+    });
 });
 
 
