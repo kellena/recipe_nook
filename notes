@@ -1,0 +1,9 @@
+Get started by placing your search query in the "q" parameter, fill in your 3scale credentials, and press the "Try it out!" button at the bottom. Additionaly, refine your search by using the optional parameters to specify what you are looking for.
+
+https://api.edamam.com
+/api/recipes/v2
+q: (keyword search)
+app_id: e0c122db
+app_key: d1dd185afa7cf021280018d22047ceea
+
+curl "https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}&from=0&to=3&calories=591-722&health=alcohol-free"
