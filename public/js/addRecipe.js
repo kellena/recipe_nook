@@ -8,6 +8,15 @@ submitBtn.on("click", function (event) {
     event.preventDefault();
    
    searchTerm = searchTerm.val();
+   
+   
+   fetch('searchTerm', {
+    //.then((res) => res.json())
+    //.then((data) => {
+})
+.catch((error) => {
+  console.error('Error:', error);
+
 //add fetch on '/api/edamam/:searchterm
 //    recipeAPI(searchTerm)
 }); 
