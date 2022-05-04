@@ -9,9 +9,9 @@ router.get('/:searchterm', async (req, res) => {
     // console.log(queryURL);
     axios.get(queryURL)
 
-    .then(function (response) {
+    //.then(function (response) {
       // handle success
-      console.log(response.data)
+      //console.log(response.data)
         .then(function (response) {
             // handle success
             let hits = response.data.hits;
@@ -37,13 +37,13 @@ router.get('/:searchterm', async (req, res) => {
         })
         .catch(function (error) {
             // handle error
-            "oh fork, something went wrong"
-            console.log(error);
+            
+            console.log("oh fork, something went wrong");
         })
 
   });
 
-});
+
 
 
 
