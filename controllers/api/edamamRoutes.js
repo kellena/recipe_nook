@@ -9,9 +9,6 @@ router.get('/:searchterm', async (req, res) => {
     // console.log(queryURL);
     axios.get(queryURL)
 
-    // .then(function (response) {
-    //   // handle success
-    //   console.log(response.data);
     .then(function (response) {
         // handle success
         let hits = response.data.hits;
