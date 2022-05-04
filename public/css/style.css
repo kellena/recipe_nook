@@ -1,4 +1,14 @@
-:root{
-background-image: url(https://thumbs.dreamstime.com/b/healthy-organic-vegetables-copy-space-frame-eating-cooking-72996835.jpg);
-background-color: beige;
+body {
+    background-image: url(https://thumbs.dreamstime.com/b/healthy-organic-vegetables-copy-space-frame-eating-cooking-72996835.jpg);
+    background-color: beige;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    text-align: center;
+    text-decoration-color: black;
+}
+header {
+    text-decoration: wavy;
+}
+
+main {
+    
 }
