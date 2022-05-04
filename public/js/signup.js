@@ -19,3 +19,5 @@ const singupFormHandler = async function(event) {
 };
 
 document.querySelector("#create-account").addEventListener("submit", singupFormHandler)
+const createBtn = document.querySelector
+
