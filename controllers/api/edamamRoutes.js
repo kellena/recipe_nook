@@ -9,9 +9,15 @@ router.get('/:searchterm', async (req, res) => {
     // console.log(queryURL);
     axios.get(queryURL)
 
+<<<<<<< HEAD
     //.then(function (response) {
       // handle success
       //console.log(response.data)
+=======
+    // .then(function (response) {
+    //   // handle success
+    //   console.log(response.data)
+>>>>>>> main
         .then(function (response) {
             // handle success
             let hits = response.data.hits;
@@ -29,21 +35,38 @@ router.get('/:searchterm', async (req, res) => {
                 recipeData.push(recipeObj)
                 // console.log(recipeData);
 
+
             }
-            res.json(recipeData)
+            console.log(hits[i]);
+            recipeData.push(recipeObj)
+            // console.log(recipeData);
 
-            // console.log(response.data);
+        }
+        res.json(recipeData)
 
+<<<<<<< HEAD
         })
         .catch(function (error) {
             // handle error
             
             console.log("oh fork, something went wrong");
         })
+=======
+        // console.log(response.data);
+>>>>>>> main
 
-  });
+    })
+    .catch(function (error) {
+        // handle error
+        "oh fork, something went wrong"
+        console.log(error);
+    })
 
+<<<<<<< HEAD
 
+=======
+// });
+>>>>>>> main
 
 
 
