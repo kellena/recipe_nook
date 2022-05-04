@@ -1,43 +1,22 @@
-var submitBtn = $("#search-btn");
-var searchTerm = $("#keyword");
+const searchTerm = $("#keyword").val;
+const recipeAPI = async function (searchTerm) {
 
-var searchResults = $("#recipeResults");
-
-
-submitBtn.on("click", function (event) {
-    event.preventDefault();
+const submitBtn = $("#search-btn");
+const searchResults = $("#recipeResults");
    
-   searchTerm = searchTerm.val();
-    //stringify method
-    console.log(searchTerm);
-    //set value to something
-    //call search term
-    //call api and do post method then give search term
+   
+   const response = await fetch(`/api/edamam/:${searchTerm}`, {
+     method: 'GET',
+     headers: {
+       'Content-Type': 'application/json',
+     },
+   })
+   if (response.ok) {
+     document.location.replace('/pageroutes');
+   } else {
+     console.log(err);
+   }
+}
 
-    //.then((res) => res.json())
-    //.then((data) => {
-})
-.catch((error) => {
-  console.error('Error:', error);
-
- //add fetch on '/api/edamam/:searchterm
- //    recipeAPI(searchTerm)
-})
-
-
-//var userSearchTerm = searchTerm.val();
-
-// function recipeAPI(searchTerm){
-
-//     var queryURL = "https://api.edamam.com/search?q=" & searchTerm & app_id & APIKey & "imageSize=thumbnail" & "to=10";
-//     call it and put search term in to it
-//     fetch(queryURL)
-//        .then(function (response) {
-//             return response.json();
-//         })
-//         .then(function(data) {
-//             console.log(data)
-//           })
-
-// }
+submitBtn.on("click", recipeAPI(searchTerm))
 
