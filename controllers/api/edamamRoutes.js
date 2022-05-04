@@ -23,7 +23,7 @@ router.get('/:searchterm', async (req, res) => {
                     "uri" : hits[i].recipe.uri,
                     "ingredientLines" : hits[i].recipe.ingredientLines,
                     "dishType" : hits[i].recipe.dishType,
-                    "cuisineType" : hits[i].recipe.cuisineType
+                    "cuisineType" : hits[i].recipe.cuisineType,
                 }
                 console.log(hits[i]);
                 recipeData.push(recipeObj)
@@ -40,7 +40,9 @@ router.get('/:searchterm', async (req, res) => {
             "oh fork, something went wrong"
             console.log(error);
         })
+
   });
+
 });
 
 
