@@ -1,7 +1,7 @@
 const router = require('express').Router();
 
 //const recipeRoutes = require('./recipeRoutes');
-const userRoutes = require('./userRoutes.js');
+const userRoutes = require('./usersRoutes.js');
 const edamamRoutes = require('./edamamRoutes');
 
 //router.use('/recipes', recipeRoutes);
