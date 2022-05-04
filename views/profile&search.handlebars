@@ -1,0 +1,44 @@
+{{-- </body> --}}
+
+  <div class="flex-column min-100-vh">
+        <header class="hero">
+        <h1 class="app-title"> Welcome to {`signupUsername`}'s' Recipe Nook</h1>
+        </header>
+        <div class="row">
+            <div class=".col-4">
+              <div class="card" style="width: 22rem;" >
+                <h3 class="card-header text-uppercase">What should I make for dinner tonight!?</h3>
+                <form id="user-form" class="card-body">
+                  <input id="keyword" type="text" autofocus="true" class="form-input" placeholder="I'm craving..."/>
+                  <button type="submit" id="search-btn">Search</button>
+                </form>
+              </div>
+            </div>
+        </div>
+            <div class="row"></div>
+            <div class id="recipeResults .col-8" >
+              <h2>Suggestions for you:</h2>
+                {{!-- <ul>
+                  <li>label</li>
+                  <li>image</li>
+                  <li>uri</li>
+                  <li>ingredientLines</li>
+                  <li>dishType</li>
+                  <li>cuisineType</li>
+      
+                </ul> --}}
+
+            
+          </div>
+        </div>
+          
+  
+   <div class=".col-6">
+     <h1>My Favorite Recipes</h1>
+
+   </div> 
+  </div>
+
+  
+  <footer><div id="edamam-badge" data-color="white"></div></footer>
+  <script src="./js/addRecipe.js"></script>
