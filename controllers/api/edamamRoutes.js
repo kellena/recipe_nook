@@ -29,19 +29,23 @@ router.get('/:searchterm', async (req, res) => {
                 recipeData.push(recipeObj)
                 // console.log(recipeData);
 
+
             }
-            res.json(recipeData)
+            console.log(hits[i]);
+            recipeData.push(recipeObj)
+            // console.log(recipeData);
 
-            // console.log(response.data);
+        }
+        res.json(recipeData)
 
-        })
-        .catch(function (error) {
-            // handle error
-            "oh fork, something went wrong"
-            console.log(error);
-        })
+        // console.log(response.data);
 
-  });
+    })
+    .catch(function (error) {
+        // handle error
+        "oh fork, something went wrong"
+        console.log(error);
+    })
 
 // });
 

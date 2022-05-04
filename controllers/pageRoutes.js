@@ -1,15 +1,22 @@
 const router = require('express').Router();
-// const Dish = require('../models/Dish');
 
 router.get('/', async (req, res) => {
   res.render("homepage")
   });
 
 router.get('/login', async (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/')
+    return;
+  }
   res.render("login")
   });
 
 router.get('/signup', async (req, res) => {
+  if (req.session.loggedIn) {
+    res.redirect('/')
+    return;
+  }
   res.render("signup")
   });
 
