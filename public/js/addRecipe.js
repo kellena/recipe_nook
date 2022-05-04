@@ -1,6 +1,5 @@
 var submitBtn = $("#search-btn");
 var searchTerm = $("#keyword");
-//already recording value so may not need to fetch
 
 var searchResults = $("#recipeResults");
 
@@ -9,12 +8,8 @@ submitBtn.on("click", function (event) {
     event.preventDefault();
    
    searchTerm = searchTerm.val();
-   
-   
-   //fetch('searchTerm', {
-    //search term already being recording in variable
-    //await fetch
     //stringify method
+    console.log(searchTerm);
     //set value to something
     //call search term
     //call api and do post method then give search term
