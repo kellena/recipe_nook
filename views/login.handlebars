@@ -1,19 +1,19 @@
-<form class="form" id="login">
+<form class="form" id="loginAccount">
     <h1 class="form__title">Login</h1>
     <div class="form__message form__message--error"></div>
     <div class="form__input-group">
-        <input type="text" class="form__input" autofocus placeholder="Username or email">
+        <input id="emailLogin" type="text" class="form__input" autofocus placeholder="Email">
         <div class="form__input-error-message"></div>
     </div>
     <div class="form__input-group">
-        <input type="password" class="form__input" autofocus placeholder="Password">
+        <input id="passwordLogin" type="password" class="form__input" autofocus placeholder="Password">
         <div class="form__input-error-message"></div>
     </div>
     
     <button class="form__button" type="submit">Continue</button>
 
     <p class="form__text">
-        <a class="form__link" href="./" id="linkSignup">Don't have an account? Create account</a>
+        <a class="form__link" href="/signup" id="linkSignup">Don't have an account? Create account here!</a>
     </p>
 </form>
 
