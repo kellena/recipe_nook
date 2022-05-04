@@ -40,8 +40,11 @@ router.get('/:searchterm', async (req, res) => {
             "oh fork, something went wrong"
             console.log(error);
         })
-    });
+
+  });
+
 });
+
 
 
 module.exports = router;
