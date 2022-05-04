@@ -30,24 +30,24 @@ router.get('/:searchterm', async (req, res) => {
                 // console.log(recipeData);
 
 
-            }
-            console.log(hits[i]);
-            recipeData.push(recipeObj)
-            // console.log(recipeData);
+            // }
+            // console.log(hits[i]);
+            // recipeData.push(recipeObj)
+            // // console.log(recipeData);
 
         }
         res.json(recipeData)
 
         // console.log(response.data);
 
-    })
+    })    
     .catch(function (error) {
         // handle error
         "oh fork, something went wrong"
         console.log(error);
-    })
+    });
 
-// });
+});
 
 
 
