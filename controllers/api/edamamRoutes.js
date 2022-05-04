@@ -41,11 +41,11 @@ router.get('/:searchterm', async (req, res) => {
         })
 
     })
-    .catch(function (error) {
-        // handle error
-        "oh fork, something went wrong"
-        console.log(error);
-    })
+    // .catch(function (error) {
+    //     // handle error
+    //     "oh fork, something went wrong"
+    //     console.log(error);
+    // })
 
 
 
