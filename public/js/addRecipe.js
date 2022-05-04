@@ -1,40 +1,22 @@
-var submitBtn = $("#search-btn");
-var searchTerm = $("#keyword");
+const searchTerm = $("#keyword").val;
+const recipeAPI = async function (searchTerm) {
 
-var searchResults = $("#recipeResults");
-
-
-submitBtn.on("click", function (event) {
-    event.preventDefault();
-   
-   searchTerm = searchTerm.val();
+const submitBtn = $("#search-btn");
+const searchResults = $("#recipeResults");
    
    
-   fetch('searchTerm', {
-    //.then((res) => res.json())
-    //.then((data) => {
-})
-.catch((error) => {
-  console.error('Error:', error);
+   const response = await fetch(`/api/edamam/:${searchTerm}`, {
+     method: 'GET',
+     headers: {
+       'Content-Type': 'application/json',
+     },
+   })
+   if (response.ok) {
+     document.location.replace('/pageroutes');
+   } else {
+     console.log(err);
+   }
+}
 
-//add fetch on '/api/edamam/:searchterm
-//    recipeAPI(searchTerm)
-}); 
-
-
-//var userSearchTerm = searchTerm.val();
-
-// function recipeAPI(searchTerm){
-
-//     var queryURL = "https://api.edamam.com/search?q=" & searchTerm & app_id & APIKey & "imageSize=thumbnail" & "to=10";
-
-//     fetch(queryURL)
-//        .then(function (response) {
-//             return response.json();
-//         })
-//         .then(function(data) {
-//             console.log(data)
-//           })
-
-// }
+submitBtn.on("click", recipeAPI(searchTerm))
 
