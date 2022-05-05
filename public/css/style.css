@@ -16,3 +16,9 @@ header {
 main {
     
 }
+
+.card {
+    border: 2px;
+    border-color: black;
+    margin: 2px;
+}
