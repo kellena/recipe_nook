@@ -1,8 +1,8 @@
 const searchTerm = $("#keyword").val;
 const recipeAPI = async function (searchTerm) {
 
-  const submitBtn = document.getElementById("search-btn")
-  const searchResults = $("#recipeResults");
+  // const submitBtn = document.getElementById("submitBtn");
+  const searchResults = document.getElementById("recipeResults");
    
   const response = await fetch(`/api/edamam/:${searchTerm}`, {
     method: 'GET',
@@ -17,5 +17,6 @@ const recipeAPI = async function (searchTerm) {
   }
 }
 
-submitBtn.on("click", recipeAPI(searchTerm))
+document.querySelector("#submitBtn").addEventListener("submit", recipeAPI(searchTerm))
+// submitBtn.on("click", recipeAPI(searchTerm))
 
