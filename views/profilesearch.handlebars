@@ -8,17 +8,17 @@
                 <h3 class="card-header text-uppercase">What should I make for dinner tonight!?</h3>
                 <form id="user-form" class="card-body">
                   <input id="keyword" type="text" autofocus="true" class="form-input" placeholder="I'm craving..."/>
-                  <button type="submit" id="search-btn">Search</button>
+                  <button type="submit" id="submitBtn">Search</button>
                 </form>
               </div>
             </div>
         </div>
             <div class="row"></div>
-            <div class id="recipeResults .col-8" >
+            <div class=".col-8" id="recipeResults" >
               <h2>Suggestions for you:</h2>
               <div class="card" style="width: 18rem;">
                 {{!-- //image: --}}
-              <img src="..." class="card-img-top" alt="...">
+              {{!-- <img src="..." class="card-img-top" alt="..."> --}}
               <div class="card-body">
                 <h5 class="card-title">Recipe Label</h5>
               </div>
@@ -44,5 +44,5 @@
 
   
   <footer><div id="edamam-badge" data-color="white"></div></footer>
-  <script src="/public/js/addRecipe.js"></script>
+  <script src="/js/addRecipe.js"></script>
 
