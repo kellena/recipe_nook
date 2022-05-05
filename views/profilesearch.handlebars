@@ -1,6 +1,6 @@
     <div class="flex-column min-100-vh">
         <header class="hero">
-        <h1 class="app-title"> Welcome to {{signupUsername}}'s' Recipe Nook</h1>
+        <h1 class="app-title"> Welcome to the Recipe Nook</h1>
         </header>
         <div class="row">
             <div class=".col-4">
@@ -16,22 +16,23 @@
             <div class="row"></div>
             <div class=".col-8" id="recipeResults" >
               <h2>Suggestions for you:</h2>
+              {{#each recipes}}
               <div class="card" style="width: 18rem;">
-                {{!-- //image: --}}
-              {{!-- <img src="..." class="card-img-top" alt="..."> --}}
+              
+              {{!-- <img src={{image}} class="card-img-top" alt="...">  --}}
               <div class="card-body">
-                <h5 class="card-title">Recipe Label</h5>
+                <h5 class="card-title">{{this.recipe.label}}
               </div>
               <ul class="list-group list-group-flush">
-                <li class1="list-group-item1">ingredientLines</li>
-                <li class2="list-group-item2">dishType</li>
-                <li class3="list-group-item3">cuisineType</li>
+                <li class1="list-group-item1">{{this.recipe.ingredientLines}}</li>
+                <li class2="list-group-item2">{{this.recipe.dishType}}</li>
+                <li class3="list-group-item3">{{this.recipe.cuisineType}}</li>
               </ul>
               <div class="card-body">
-                <a href="#" class="card-link">uri</a>
+                <a href="{{this.recipe.uri}}" class="card-link"></a>
               </div>
             </div>
-              
+              {{/each}}
           </div>
         </div>
           
@@ -44,4 +45,4 @@
 
   
   <footer><div id="edamam-badge" data-color="white"></div></footer>
-  <script src="/js/addRecipe.js"></script>
+  {{!-- <script src="/js/addRecipe.js"></script> --}}

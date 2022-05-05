@@ -13,7 +13,7 @@ const recipeAPI = async function (searchTerm) {
   if (response.ok) {
     document.location.replace('/pageRoutes');
 
-    // function listRecommendations(data) {
+    // function Recommendations(data) {
     //   var recipeTitle = $("<h5 card-title>");
     //   var ingredientLines = $("#li class1");
     //   var dishType = $("li class2");
