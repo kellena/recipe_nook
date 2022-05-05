@@ -12,6 +12,14 @@ const recipeAPI = async function (searchTerm) {
   })
   if (response.ok) {
     document.location.replace('/pageRoutes');
+
+    // function listRecommendations(data) {
+    //   var recipeTitle = $("<h5 card-title>");
+    //   var ingredientLines = $("#li class1");
+    //   var dishType = $("li class2");
+    //   var cuisineType = $("li class3");
+    //   var uri = $("card-link");
+
   } else {
     console.log(err);
   }
@@ -19,4 +27,3 @@ const recipeAPI = async function (searchTerm) {
 
 document.querySelector("#submitBtn").addEventListener("submit", recipeAPI(searchTerm))
 // submitBtn.on("click", recipeAPI(searchTerm))
-
