@@ -16,8 +16,17 @@ router.get('/signup', async (req, res) => {
   if (req.session.loggedIn) {
     res.redirect('/')
     return;
-  }
+  } else {
   res.render("signup")
-  });
+  }
+});
+
+router.get('/loginReroute', async (req, res) => {
+  if (req.session.loggedIn) {
+    res.render("profile&search")
+  } else {
+  res.redirect('/')
+  }
+});
 
 module.exports = router;

@@ -8,10 +8,11 @@ const loginFormHandler = async function(event) {
             email: emailEl.value,
             password: passwordEl.value
         }),
-        headers: {"Content-Type": "application/json"}
+        headers: {'Content-Type': 'application/json',}
     });
     if (response.ok) {
-        document.location.replace("/")
+        // document.location.replace("/")
+        fetch("/loginReroute") 
     } else {
         alert("login failed")
     }
