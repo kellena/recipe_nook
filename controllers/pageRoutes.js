@@ -23,7 +23,7 @@ router.get('/signup', async (req, res) => {
 
 router.get('/loginReroute', async (req, res) => {
   if (req.session.loggedIn) {
-    res.render("profile&search")
+    res.render("profilesearch")
   } else {
   res.redirect('/')
   }
