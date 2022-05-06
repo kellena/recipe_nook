@@ -1,8 +1,9 @@
-const searchTerm = $("#keyword").val;
+const searchTerm = document.getElementById("keyword").val;
 const recipeAPI = async function (searchTerm) {
 
   // const submitBtn = document.getElementById("submitBtn");
   const searchResults = document.getElementById("recipeResults");
+  //var searchTerm = search.val();
    
   const response = await fetch(`/api/edamam/:${searchTerm}`, {
     method: 'GET',
