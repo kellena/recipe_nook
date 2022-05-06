@@ -39,7 +39,26 @@ This application was developed to allow users to be able to search for a certain
 
 ## Installation Instructions
 
+- Node.js and MySQL must be installed on your computer.
 
+- Next go in to your terminal and run
+ npm i install-
+ express
+ sequelize
+ mysql2
+ bcrypt
+ express-session
+ express-handlebars
+ connect-session-sequelize
+ dotenv
+
+- Next in your terminal run 
+ npm run seeds
+ npm start
+
+Once that is finished, head to http://localhost:3001
+
+---
 
 ## Team Github Links
 
