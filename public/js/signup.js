@@ -3,7 +3,7 @@ const singupFormHandler = async function(event) {
     const emailEl = document.querySelector("#emailSignup")
     const passwordEl = document.querySelector("#passwordSignup")
     console.log(emailEl.value, passwordEl.value)
-    const response = await fetch ("/api/users", {
+    const response = await fetch('/api/users', {
         method: "POST",
         body: JSON.stringify({
             email: emailEl.value,
