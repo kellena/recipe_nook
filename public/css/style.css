@@ -1,4 +1,4 @@
-body, html {
+body {
     background-image: url(../img/cooking_background.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -7,18 +7,27 @@ body, html {
     font-family: 'Times New Roman', Times, serif, sans-serif;
     text-align: center;
     text-decoration-color: black;
+    padding-top: 260px;
 }
 
 header {
     text-decoration: wavy;
+    color: crimson;
+    padding-bottom: 20px;
 }
 
-main {
-    
+a {
+    padding-right: 20px;
 }
 
-.card {
-    border: 2px;
-    border-color: black;
-    margin: 2px;
+p {
+    font-weight: bold;
+    font-size: large;
 }
+
+p1 {
+    font-size: medium;
+}
+
+footer {
+    padding-top: 15px;
