@@ -1,10 +1,10 @@
-const searchTerm = document.getElementById("keyword").val;
+const searchTermEl = document.getElementById("keyword");
 const recipeAPI = async function (searchTerm) {
 
   // const submitBtn = document.getElementById("submitBtn");
   const searchResults = document.getElementById("recipeResults");
-  //var searchTerm = search.val();
-   
+  var searchTerm = searchTermEl.value;
+   //console.log(keyword)
   const response = await fetch(`/api/edamam/:${searchTerm}`, {
     method: 'GET',
     headers: {
@@ -12,7 +12,8 @@ const recipeAPI = async function (searchTerm) {
     },
   })
   if (response.ok) {
-    document.location.replace('/pageRoutes');
+    //document.location.replace('/pageRoutes');
+    console.log(searchTerm)
 
     // function Recommendations(data) {
     //   var recipeTitle = $("<h5 card-title>");
@@ -26,5 +27,5 @@ const recipeAPI = async function (searchTerm) {
   }
 }
 
-document.querySelector("#submitBtn").addEventListener("submit", recipeAPI(searchTerm))
+document.querySelector("#submitBtn").addEventListener("submit", recipeAPI(searchTermEl))
 // submitBtn.on("click", recipeAPI(searchTerm))
