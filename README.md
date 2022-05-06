@@ -15,8 +15,8 @@
 ## Table Of Contents
 
 1. [About this Application](#about-this-application)
-2. [Functionality](#functionality)
-3. [Screen Images](#screen-images)
+2. [Screen Images](#screen-images)
+3. [Installation Instructions](#installation-instructions)
 4. [Team Github Links](#team-github-links)
 
 ---
@@ -36,6 +36,10 @@ This application was developed to allow users to be able to search for a certain
 ![Image of sign-up and log-in screen](./public/img/login_screen.jpeg)
 
 ---
+
+## Installation Instructions
+
+
 
 ## Team Github Links
 
