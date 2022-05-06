@@ -33,7 +33,7 @@ This application was developed to allow users to be able to search for a certain
 
 ![Image of menu after you have succesfully logged in to application. Shows the search bar where you are able to search any food and ger recipes on it](./public/img/searchbar.png)
 
-![Image of sign-up and log-in screen](./public/img/login_screen.jpeg)
+![Image of sign-up and log-in screen](./public/img/login_screen.png)
 
 ---
 
